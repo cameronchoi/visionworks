@@ -1,15 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './navigation.scss'
 
 function Navigation () {
   return (
     <nav className='header-nav'>
-      <h3>Logo</h3>
+      <Link to='/' className='nav-link'>
+        <h3>Logo</h3>
+      </Link>
       <ul className='nav-links'>
-        <li>About</li>
-        <li>Team</li>
-        <li>News</li>
-        <li>Portfolio</li>
+        <Link to='/about' className='nav-link'>
+          <li>About</li>
+        </Link>
+        <Link to='/team' className='nav-link'>
+          <li>Team</li>
+        </Link>
+        <Link to='/news' className='nav-link'>
+          <li>News</li>
+        </Link>
+        <Link to='/portfolio' className='nav-link'>
+          <li>Portfolio</li>
+        </Link>
       </ul>
     </nav>
   )
