@@ -21,6 +21,9 @@ function Navigation () {
         <Link to='/portfolio' className='nav-link'>
           <li>Portfolio</li>
         </Link>
+        <Link to='/contact' className='nav-link'>
+          <li>Contact</li>
+        </Link>
       </ul>
     </nav>
   )
