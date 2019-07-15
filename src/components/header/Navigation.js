@@ -1,28 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './navigation.scss'
+import visionworks from '../../assets/images/White ver.png'
 
 function Navigation () {
   return (
     <nav className='header-nav'>
-      <Link to='/' className='nav-link'>
-        <h3>Logo</h3>
+      <Link to='/' className='logo-link'>
+        <img src={visionworks} alt='Logo' width='280' />
       </Link>
       <ul className='nav-links'>
         <Link to='/about' className='nav-link'>
-          <li>About</li>
+          <li>ABOUT</li>
         </Link>
         <Link to='/team' className='nav-link'>
-          <li>Team</li>
+          <li>TEAM</li>
         </Link>
         <Link to='/news' className='nav-link'>
-          <li>News</li>
+          <li>NEWS</li>
         </Link>
         <Link to='/portfolio' className='nav-link'>
-          <li>Portfolio</li>
+          <li>PORTFOLIO</li>
         </Link>
         <Link to='/contact' className='nav-link'>
-          <li>Contact</li>
+          <li>CONTACT</li>
         </Link>
       </ul>
     </nav>
